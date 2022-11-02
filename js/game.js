@@ -47,6 +47,9 @@ const checkCards = () => {
 
     if (firstCharacter === secondCharacter) {
 
+        firstCard.firstChild.classList.add('disabled-card');
+        secondCard.firstChild.classList.add('disabled-card');
+
     } else {
 
         setTimeout(() => {
@@ -56,7 +59,7 @@ const checkCards = () => {
 
             firstCard = '';
             secondCard = '';
-            
+
         }, 500);
     }
 };
