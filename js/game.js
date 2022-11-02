@@ -20,11 +20,6 @@ const createElement = (tag, className) => {
     return element;
 };
 
-const revealCard = ({target}) => {
-
-    target.parentNode.classList.add('reveal-card');
-}
-
 const createCard = (character) => {
 
     const card = createElement('div', 'card');
@@ -39,6 +34,33 @@ const createCard = (character) => {
     card.addEventListener('click', revealCard);
 
     return card;
+};
+
+let firstCard = '';
+let secondCard = '';
+
+const checkCards = () => {
+    
+}
+
+const revealCard = ({target}) => {
+
+    if (target.parentNode.className.includes('reveal-card')) {
+        return;
+    }
+
+    if (firstCard === '') {
+
+        target.parentNode.classList.add('reveal-card');
+        firstCard = target.parentNode;
+
+    } else if (secondCard === '') {
+
+        target.parentNode.classList.add('reveal-card');
+        secondCard = target.parentNode;
+
+        checkCards();
+    }
 };
 
 const loadGame = () => {
