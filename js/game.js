@@ -32,6 +32,7 @@ const createCard = (character) => {
     card.appendChild(back);
 
     card.addEventListener('click', revealCard);
+    card.setAttribute('data-character', character);
 
     return card;
 };
@@ -40,8 +41,25 @@ let firstCard = '';
 let secondCard = '';
 
 const checkCards = () => {
-    
-}
+
+    const firstCharacter = firstCard.getAttribute('data-character');
+    const secondCharacter = secondCard.getAttribute('data-character');
+
+    if (firstCharacter === secondCharacter) {
+
+    } else {
+
+        setTimeout(() => {
+
+            firstCard.classList.remove('reveal-card');
+            secondCard.classList.remove('reveal-card');
+
+            firstCard = '';
+            secondCard = '';
+            
+        }, 500);
+    }
+};
 
 const revealCard = ({target}) => {
 
