@@ -1,5 +1,17 @@
 const grid = document.querySelector('.grid');
 
+const cards = [
+    'beth',
+    'jerry',
+    'jessica',
+    'morty',
+    'pessoa-passaro',
+    'pickle-rick',
+    'rick',
+    'summer',
+    'meeseeks',
+    'scroopy',
+];
 
 const createElement = (tag, className) => {
 
