@@ -38,6 +38,8 @@ const loadGame = () => {
 
     const duplicateCharacters = [...characters, ...characters];
 
+    const shuffleArray = duplicateCharacters.sort();
+
     duplicateCharacters.forEach((character) => {
 
         const card = createCard(character);
