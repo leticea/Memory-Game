@@ -20,6 +20,11 @@ const createElement = (tag, className) => {
     return element;
 };
 
+const revealCard = ({target}) => {
+
+    target.parentNode.classList.add('reveal-card');
+}
+
 const createCard = (character) => {
 
     const card = createElement('div', 'card');
@@ -30,6 +35,8 @@ const createCard = (character) => {
 
     card.appendChild(front);
     card.appendChild(back);
+
+    card.addEventListener('click', revealCard);
 
     return card;
 };
