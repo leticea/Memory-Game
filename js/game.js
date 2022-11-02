@@ -1,6 +1,6 @@
 const grid = document.querySelector('.grid');
 
-const cards = [
+const characters = [
     'beth',
     'jerry',
     'jessica',
@@ -31,3 +31,14 @@ const createCard = () => {
 
     return card;
 };
+
+const loadGame = () => {
+
+    characters.forEach((character) => {
+
+        const card = createCard();
+        grid.appendChild(card);
+    });
+}
+
+loadGame();
