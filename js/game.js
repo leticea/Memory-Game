@@ -113,7 +113,7 @@ const loadGame = () => {
         const card = createCard(character);
         grid.appendChild(card);
     });
-}
+};
 
 const startTimer = () => {
 
@@ -122,7 +122,7 @@ const startTimer = () => {
         timer.innerHTML = currentTime + 1;
 
     }, 1000);
-}
+};
 
 window.onload = () => {
 
@@ -130,4 +130,4 @@ window.onload = () => {
 
     startTimer();
     loadGame();
-}
+};
