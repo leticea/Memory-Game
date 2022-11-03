@@ -49,7 +49,7 @@ const checkEndGame = () => {
     if (disabledCards.length === 20) {
 
         clearInterval(this.loop);
-        alert('Parabéns, você ganhou!');
+        alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`);
     }
 };
 
@@ -128,6 +128,6 @@ window.onload = () => {
 
     spanPlayer.innerHTML = localStorage.getItem('player');
 
-    //startTimer();
+    startTimer();
     loadGame();
 }
