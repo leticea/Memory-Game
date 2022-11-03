@@ -47,6 +47,8 @@ const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
     if (disabledCards.length === 20) {
+
+        clearInterval(this.loop);
         alert('Parabéns, você ganhou!');
     }
 };
@@ -115,7 +117,7 @@ const loadGame = () => {
 
 const startTimer = () => {
 
-    setInterval(() => {
+    this.loop = setInterval(() => {
         const currentTime = +timer.innerHTML;
         timer.innerHTML = currentTime + 1;
 
