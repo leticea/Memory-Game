@@ -11,7 +11,7 @@
   <img alt="game" src=".github/image.png">
 </p>
 
-## Tic-Tac-Toe
+## Memory Game
 
 ## 🚀 Tecnologias
 
@@ -23,9 +23,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Aplicação com JavaScript de um Jogo da Velha.
+Aplicação com JavaScript de um Jogo da Memória.
 
-Aula do canal [Código Fonte TV](https://www.youtube.com/watch?v=M258B1b_pMs)
+Aula do canal [Manual do Dev](https://www.youtube.com/watch?v=NV88N1r2Qkg)
 
 ## 🚀 Como Rodar
 
